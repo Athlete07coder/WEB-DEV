@@ -1,0 +1,53 @@
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfdfd; /* Light background for contrast */
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar styling (optional, but nice) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f7f9fb;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ffffff;
+            border-radius: 10px;
+        }
+        /* Keyframe for subtle hero animation */
+        @keyframes fadeInMoveUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-hero {
+            animation: fadeInMoveUp 1s ease-out;
+        }
+        /* Simple button hover effect */
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(220, 121, 40, 0.4);
+        }
+        .social-links {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .social-links a {
+      text-decoration: none;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+    }
+
+    .social-links img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+
+    .social-links img:hover {
+      transform: scale(1.1);
+    }
